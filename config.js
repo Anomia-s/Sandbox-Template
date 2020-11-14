@@ -1,6 +1,8 @@
 const config = {
     name: "My Sandbox Site!",
     motto: "Your average sandbox site!",
+    logo: "",
+    favicon: "",
     social_media:{
         twitter:"",
         discord:"",
@@ -11,15 +13,21 @@ const config = {
         postRate: 1, // one post every 15 seconds
 
         categories:{
-            General: "General",
-            GeneralDesc: "Just a general place",
-            ///////////////////
-            OffTopic: "Off-Topic",
-            OffTopicDesc: "Just random.",
-            /////////////////////////////
-            MarketPlace:"Market",
-            MarketPlaceDesc:"Trading?! How?!",
-            ////////////////////////////
+            
+            {
+                name: "General",
+                desc: "Just a general place"
+            },
+        
+            {
+                name: "Off-Topic",
+                desc: "Just random."
+            },
+    
+            {
+                name: "Marketplace",
+                desc: "Trading?! How?!"
+            }
         }
 
     },
